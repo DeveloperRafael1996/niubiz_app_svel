@@ -15,7 +15,7 @@ export const load: PageServerLoad = async ({ url }) => {
   };
 
   const response = await axios.post(
-    "http://localhost:8080/encrypt/v1/decrypt-url-seccion",
+    "https://ms-pay-dev-700901035298.us-central1.run.app/encrypt/v1/decrypt-url-seccion",
     payload,
     { headers: { "Content-Type": "application/json" } }
   );
